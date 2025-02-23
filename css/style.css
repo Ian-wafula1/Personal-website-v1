@@ -1,5 +1,6 @@
 :root {
     --grey: #f4f5ef;
+    --dark-grey: #8d8f86;
 }
 
 body {
@@ -57,10 +58,10 @@ a:hover {
 }
 
 .hero {
-    padding: 8rem 11rem;
+    padding: 14rem 11rem;
     display: flex;
     justify-content: space-between;
-    gap: 13rem;
+    gap: 26rem;
 }
 
 .hero .left {
@@ -103,4 +104,74 @@ svg {
     color: #5c5c54;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--grey);
+    padding: 4rem 5rem;
+}
+
+
+.experience > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.exp:nth-child(1) > div:first-child {
+    background-image: url('../images/connection-system-svgrepo-com.svg');
+    
+}
+
+.exp:nth-child(3) > div:first-child {
+    background-image: url('../images/Alx--Streamline-Simple-Icons.svg');
+}
+
+.exp:nth-child(5) > div:first-child {
+    background-image: url('../images/linux-svgrepo-com.svg');
+}
+
+.exp div:first-child {
+    width: 5.4rem;
+    height: 5.4rem;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.experience .divider {
+    width: 55%;
+    height: 1px;
+    background-color: var(--dark-grey);
+}
+
+.exp {
+    display: flex;
+    /* border: 3px solid red; */
+    width: 80%;
+    justify-content: flex-start;
+    padding-left: 15%;
+    gap: 4rem;
+    align-items: center;
+}
+
+.exp > div:last-child p:first-child{
+    font-size: 2.5rem;
+}
+
+.exp > div:last-child p:last-child{
+    /* font-size: 1.6rem; */
+    color: #30302e;
+}
+.experience > p {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #30302e;
 }
