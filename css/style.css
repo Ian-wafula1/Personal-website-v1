@@ -48,5 +48,59 @@ a:link, a:visited {
 
 a:hover {
     opacity: 0.8;
-    text-decoration: underline;
+}
+
+[alt='profile'] {
+    width: 6rem;
+    height: 6 rem;
+    border-radius: 50%;
+}
+
+.hero {
+    padding: 8rem 11rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 13rem;
+}
+
+.hero .left {
+    font-size: 6rem;
+    flex-shrink: 0;
+}
+
+.hero .left .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .left .images > div:last-child {
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+.svg {
+    /* width: 5rem; */
+    height: 4rem;
+    padding: .6rem;
+    border-radius: 50%;
+    border: 1px solid rgb(173, 163, 163);
+    overflow: visible;
+}
+
+svg {
+    position: relative;
+    top: -4.5rem;
+    /* margin: 4rem 0; */
+}
+
+.hero .right p:first-child {
+    font-size: 4.4rem;
+}
+
+.hero .right p:last-child {
+    color: #5c5c54;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
