@@ -17,11 +17,15 @@ header img {
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     display: flex;
     gap: 8rem;
     align-items: center;
-    margin: 1.5rem 9rem;
+    padding: 1.5rem 9rem;
     justify-content: space-between;
+    background-color: white;
 }
 
 header ul {
@@ -48,7 +52,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 [alt='profile'] {
@@ -58,7 +62,7 @@ a:hover {
 }
 
 .hero {
-    padding: 14rem 11rem;
+    padding: 18rem 11rem 14rem;
     display: flex;
     justify-content: space-between;
     gap: 26rem;
@@ -111,9 +115,8 @@ svg {
     flex-direction: column;
     gap: 4rem;
     background-color: var(--grey);
-    padding: 4rem 5rem;
+    padding: 10rem 5rem 13rem;
 }
-
 
 .experience > div {
     display: flex;
@@ -146,7 +149,9 @@ svg {
 }
 
 .experience .divider {
-    width: 55%;
+    width: 50%;
+    position: relative;
+    right: calc(1vw + .8rem);
     height: 1px;
     background-color: var(--dark-grey);
 }
@@ -174,4 +179,91 @@ svg {
     text-align: center;
     font-weight: 500;
     color: #30302e;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+    padding: 16rem 14rem;
+    gap: 4rem;
+
+}
+
+.technologies > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.technologies > div:first-child > p:first-child {
+    font-size: 3rem;
+}
+
+.technologies > div:first-child > p:last-of-type {
+    color: #30302e;
+}
+
+.buttons div {
+    border: 1px solid #30302e;
+    border-radius: 1.3rem;
+    padding: 1.2rem 2.5rem;
+}
+
+.technologies .buttons {
+    display: flex;
+    gap: 2.5rem;
+}
+
+
+.buttons div:first-child {
+    background-color: black;
+}
+
+.buttons div:first-child a {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10rem, 15rem));
+    grid-auto-rows: 12rem;
+}
+
+.text {
+    background-color: var(--grey);
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.text p:first-child {
+    font-size: 2.6rem;
+}
+
+.text p:last-child {
+    font-size: 1.4rem;
+    color: #30302e;
+}
+
+.grid div:nth-child(1) {
+    background-image: url('../images/bootstrap-fill-svgrepo-com.svg');   
+}
+
+.grid div:nth-child(3) {
+    background-image: url('../images/aws-svgrepo-com.svg');   
+}
+
+.grid div:nth-child(6) {
+    background-image: url('../images/javascript-svgrepo-com.svg');   
+}
+
+.grid div:nth-child(8) {
+    background-image: url('../images/ruby-svgrepo-com.svg');   
+}
+
+
+.grid .logo {
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
 }
