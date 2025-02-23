@@ -174,11 +174,12 @@ svg {
     /* font-size: 1.6rem; */
     color: #30302e;
 }
-.experience > p {
+.experience > p, .projects > p {
     font-size: 5rem;
     text-align: center;
     font-weight: 500;
     color: #30302e;
+    flex: initial;
 }
 
 .technologies {
@@ -227,6 +228,7 @@ svg {
     display: grid;
     grid-template-columns: repeat(4, minmax(10rem, 15rem));
     grid-auto-rows: 12rem;
+    justify-self: center;
 }
 
 .text {
@@ -266,4 +268,81 @@ svg {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center;
+}
+
+.projects button {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: white;
+}
+
+.projects a {
+    width: max-content;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 10rem 15rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2.3rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card p:first-of-type {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.card p:nth-of-type(2) {
+    color: #5c5c54;
+    font-weight: 500;
+    font-size: 1.7rem;
+    position: relative;
+    top: -1rem;
+}
+
+.card div {
+    min-height: 30rem;
+    border-radius: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 1rem; */
+}
+
+.card:nth-child(1)  div{
+    background-image: url('../images/tic-tac-toe.png');
+}
+.card:nth-child(2) div {
+    background-image: url('../images/etch-a-sketch.png');
+}
+.card:nth-child(3) div {
+    background-image: url('../images/admin-dashboard.png');
+}
+.card:nth-child(4) div {
+    background-image: url('../images/library.png');
+}
+
+.projects > a button {
+    width: 20rem;
+    padding: 1.5rem 3rem;
+    position: relative;
+    top: 1rem;
 }
