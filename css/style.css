@@ -346,3 +346,15 @@ svg {
     position: relative;
     top: 1rem;
 }
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1.6rem;
+}
+
+footer > a:link, footer > a:visited {
+    color: white;
+    text-decoration: underline;
+}
