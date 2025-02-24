@@ -1,449 +1,472 @@
 :root {
-    --grey: #f4f5ef;
-    --dark-grey: #8d8f86;
+  --grey: #f4f5ef;
+  --dark-grey: #8d8f86;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 header img {
-    width: 5rem;
-    transition: transform .5s;
+  width: 5rem;
+  transition: transform 0.5s;
 }
 
 header img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 header > a:first-child:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    gap: 8rem;
-    align-items: center;
-    padding: 1.5rem 9rem;
-    justify-content: space-between;
-    background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  padding: 1.5rem 9rem;
+  justify-content: space-between;
+  background-color: white;
 }
 
 header ul {
-    display: flex;
-    gap: 6rem;
-    font-size: 1.9rem;
+  display: flex;
+  gap: 6rem;
+  font-size: 1.9rem;
 }
 
 header button {
-    color: white;
-    background-color: black;
-    border: none;
-    padding: .7rem 2rem;
-    border-radius: 6px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 6px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    color: black;
-    transition: opacity .4s;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  transition: opacity 0.4s;
 }
 
 a:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-[alt='profile'] {
-    width: 6rem;
-    height: 6 rem;
-    border-radius: 50%;
+[alt="profile"] {
+  width: 6rem;
+  height: 6 rem;
+  border-radius: 50%;
 }
 
 .hero {
-    padding: 18rem 11rem 14rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 26rem;
-    position: relative;
+  padding: 18rem 11rem 14rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 26rem;
+  position: relative;
 }
 
 .hero .left {
-    font-size: 6rem;
-    flex-shrink: 0;
+  font-size: 6rem;
+  flex-shrink: 0;
 }
 
 .hero .left .images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero .left .images > div:last-child {
-    display: flex;
-    gap: 2rem;
-    margin-right: 1rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+  align-items: center;
 }
 .svg {
-    width: 4.5rem;
-    height: 4.5rem;
-    padding: .6rem;
-    border-radius: 50%;
-    border: 1px solid rgb(173, 163, 163);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    transition: background-color .7s;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid rgb(173, 163, 163);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-color 0.7s;
 }
 
 .svg:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 a:has(> div.svg):hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .instagram {
-    background-image: url('../images/instagram-black.svg');
+  background-image: url("../images/instagram-black.svg");
 }
 
 .instagram:hover {
-    background-image: url('../images/instagram-white.svg');
+  background-image: url("../images/instagram-white.svg");
 }
 
-.x{
-    background-image: url('../images/x-social-media-black-icon.svg');
+.x {
+  background-image: url("../images/x-social-media-black-icon.svg");
 }
 
 .x:hover {
-    background-image: url('../images/x-social-media-white-icon.svg');
+  background-image: url("../images/x-social-media-white-icon.svg");
 }
 
 .github {
-    background-image: url('../images/github-black.svg');
+  background-image: url("../images/github-black.svg");
 }
 
 .github:hover {
-    background-image: url('../images/github-white.svg');
+  background-image: url("../images/github-white.svg");
 }
 
 .hero .right p:first-child {
-    font-size: 4.4rem;
+  font-size: 4.4rem;
 }
 
 .hero .right p:last-child {
-    color: #5c5c54;
-    font-size: 1.8rem;
-    font-weight: 500;
+  color: #5c5c54;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .hero .to-top {
-    background-color: #000;
-    border-radius: 1rem;
-    width: 4.5rem;
-    height: 4.5rem;
-    cursor: pointer;
-    background-image: url('../images/arrow-up-svgrepo-com.svg');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: #000;
+  border-radius: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+  background-image: url("../images/arrow-up-svgrepo-com.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero > a {
-    position: fixed;
-    bottom: 8rem;
-    right: 6rem;
+  position: fixed;
+  bottom: 8rem;
+  right: 6rem;
 }
 
 .hero > a:hover {
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .experience {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    background-color: var(--grey);
-    padding: 10rem 5rem 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: var(--grey);
+  padding: 10rem 5rem 13rem;
 }
 
 .experience > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 .exp:nth-child(1) > div:first-child {
-    background-image: url('../images/connection-system-svgrepo-com.svg');
-    
+  background-image: url("../images/connection-system-svgrepo-com.svg");
 }
 
 .exp:nth-child(3) > div:first-child {
-    background-image: url('../images/Alx--Streamline-Simple-Icons.svg');
+  background-image: url("../images/Alx--Streamline-Simple-Icons.svg");
 }
 
 .exp:nth-child(5) > div:first-child {
-    background-image: url('../images/linux-svgrepo-com.svg');
+  background-image: url("../images/linux-svgrepo-com.svg");
 }
 
 .exp div:first-child {
-    width: 5.4rem;
-    height: 5.4rem;
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 7px;
-    background-color: #fff;
-    transition: transform .5s;
+  width: 5.4rem;
+  height: 5.4rem;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  background-color: #fff;
+  transition: transform 0.5s;
 }
 
-.exp > div:first-child:hover, .grid > div.logo:hover {
-    transform: scale(1.1);
+.exp > div:first-child:hover,
+.grid > div.logo:hover {
+  transform: scale(1.1);
 }
 
 .experience .divider {
-    width: 50%;
-    position: relative;
-    right: calc(1vw + .8rem);
-    height: 1px;
-    background-color: var(--dark-grey);
+  width: 50%;
+  position: relative;
+  right: calc(1vw + 0.8rem);
+  height: 1px;
+  background-color: var(--dark-grey);
 }
 
 .exp {
-    display: flex;
-    width: 80%;
-    justify-content: flex-start;
-    padding-left: 15%;
-    gap: 4rem;
-    align-items: center;
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  padding-left: 15%;
+  gap: 4rem;
+  align-items: center;
 }
 
-.exp > div:last-child p:first-child{
-    font-size: 2.5rem;
+.exp > div:last-child p:first-child {
+  font-size: 2.5rem;
 }
 
-.exp > div:last-child p:last-child{
-    color: #30302e;
+.exp > div:last-child p:last-child {
+  color: #30302e;
 }
-.experience > p, .projects > p {
-    font-size: 5rem;
-    text-align: center;
-    font-weight: 500;
-    color: #30302e;
-    flex: initial;
+.experience > p,
+.projects > p {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #30302e;
+  flex: initial;
 }
 
 .technologies {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
-    padding: 16rem 14rem;
-    gap: 4rem;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+  padding: 16rem 14rem;
+  gap: 4rem;
 }
 
 .technologies > div:first-child {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .technologies > div:first-child > p:first-child {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .technologies > div:first-child > p:last-of-type {
-    color: #30302e;
+  color: #30302e;
 }
 
 .buttons button {
-    border: 1px solid #30302e;
-    border-radius: 1.3rem;
-    padding: 1.2rem 2.5rem;
+  border: 1px solid #30302e;
+  border-radius: 1.3rem;
+  padding: 1.2rem 2.5rem;
 }
 
 .technologies .buttons {
-    display: flex;
-    gap: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
 }
 
-
 .buttons a:first-child button {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .buttons a:last-child button {
-    background-color: white;
+  background-color: white;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(10rem, 15rem));
-    grid-auto-rows: 12rem;
-    justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 15rem));
+  grid-auto-rows: 12rem;
+  justify-self: center;
 }
 
 .grid span {
-    display: block;
-    font-variant: small-caps;
-    font-weight: 500;
-    font-size: 1.7rem;
+  display: block;
+  font-variant: small-caps;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .text {
-    background-color: var(--grey);
-    display: grid;
-    place-content: center;
-    text-align: center;
+  background-color: var(--grey);
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
 .text p:first-child {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 .text p:last-child {
-    font-size: 1.4rem;
-    color: #30302e;
+  font-size: 1.4rem;
+  color: #30302e;
 }
 
 .grid div:nth-child(1) {
-    background-image: url('../images/bootstrap-fill-svgrepo-com.svg');   
+  background-image: url("../images/bootstrap-fill-svgrepo-com.svg");
 }
 
 .grid div:nth-child(3) {
-    background-image: url('../images/aws-svgrepo-com.svg');   
+  background-image: url("../images/aws-svgrepo-com.svg");
 }
 
 .grid div:nth-child(6) {
-    background-image: url('../images/javascript-svgrepo-com.svg');   
+  background-image: url("../images/javascript-svgrepo-com.svg");
 }
 
 .grid div:nth-child(8) {
-    background-image: url('../images/ruby-svgrepo-com.svg');   
+  background-image: url("../images/ruby-svgrepo-com.svg");
 }
 
-
 .grid .logo {
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-    transition: transform .3s;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  transition: transform 0.3s;
 }
 
 .projects button {
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    background-color: #000;
-    color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: white;
 }
 
 .projects a {
-    width: max-content;
+  width: max-content;
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-    background-color: var(--grey);
-    padding: 10rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  background-color: var(--grey);
+  padding: 10rem 15rem;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 2.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 2.3rem;
 }
 
 .card {
-    background-color: white;
-    border-radius: 1.2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  background-color: white;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.card p:first-of-type {
-    font-size: 3.5rem;
-    font-weight: 500;
+.card > p:first-of-type {
+  font-size: 3.5rem;
+  font-weight: 500;
 }
 
-.card p:nth-of-type(2) {
-    color: #5c5c54;
-    font-weight: 500;
-    font-size: 1.7rem;
-    position: relative;
-    top: -1rem;
+.card > p:nth-of-type(2) {
+  color: #5c5c54;
+  font-weight: 500;
+  font-size: 1.7rem;
+  position: relative;
+  top: -1rem;
 }
 
-.card div {
-    height: 25rem;
-    border-radius: 2rem;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: center 0;
-    overflow: hidden;
-    transition: background-size 1.3s;
+.card > div {
+  height: 25rem;
+  border-radius: 2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center 0;
+  overflow: hidden;
+  transition: background-size 1.3s, opacity 1s;
+  color: #000;
+  /* display: grid;
+    place-content: center; */
+  /* padding: 2rem 5rem; */
 }
 
-.card div:hover {
-    background-size: 130%;
-    background-position: center 0 ;
-
+.card > div:hover {
+  background-size: 120%;
+  background-position: center 0;
+  /* opacity: .4; */
 }
 
-.card:nth-child(1)  div{
-    background-image: url('../images/tic-tac-toe.png');
+.card > div::before {
+  background-color: aqua;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-.card:nth-child(2) div {
-    background-image: url('../images/etch-a-sketch.png');
+
+.card:nth-child(1) > div {
+  background-image: url("../images/tic-tac-toe.png");
 }
-.card:nth-child(3) div {
-    background-image: url('../images/admin-dashboard.png');
+.card:nth-child(2) > div {
+  background-image: url("../images/etch-a-sketch.png");
 }
-.card:nth-child(4) div {
-    background-image: url('../images/library.png');
+.card:nth-child(3) > div {
+  background-image: url("../images/admin-dashboard.png");
+}
+.card:nth-child(4) > div {
+  background-image: url("../images/library.png");
+}
+
+.card > div > p {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding: 2rem 7rem;
+  color: white;
+  transition: background 0.7s;
 }
 
 .projects > a button {
-    width: 20rem;
-    padding: 1.5rem 3rem;
-    position: relative;
-    top: 1rem;
+  width: 20rem;
+  padding: 1.5rem 3rem;
+  position: relative;
+  top: 1rem;
 }
 
 footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 1.6rem;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1.6rem;
 }
 
-footer > a:link, footer > a:visited {
-    color: white;
-    text-decoration: underline;
+footer > a:link,
+footer > a:visited {
+  color: white;
+  text-decoration: underline;
 }
