@@ -84,12 +84,13 @@ header .drop-down {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  right: 3rem;
-  background-image: url("../images/menu-svgrepo-com.svg");
+  right: 4vw;
+  top: 1.5rem;
+  /* background-image: url("../images/menu-svgrepo-com.svg");
   background-position: center;
   background-size: 100%;
-  background-repeat: no-repeat;
-  transition: background-image 0.5s;
+  background-repeat: no-repeat; */
+  transition: content 0.5s; 
 }
 
 button {
@@ -329,6 +330,7 @@ a:has(> div.svg):hover {
   grid-template-columns: repeat(4, minmax(10rem, 15rem));
   grid-auto-rows: 12rem;
   justify-self: center;
+  overflow: hidden;
 }
 
 .grid span {
@@ -510,20 +512,29 @@ footer > a:visited {
     flex: initial;
   }
 
-  header img {
-    top: 9px;
-  }
-
   .hero .right p:first-child {
     font-size: 2.4rem;
   }
 
   header {
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
     /* gap: 1rem; */
-    padding: .5rem 2rem;
+    /* box-shadow: 0px 3px 65px 0px rgba(189,172,172,0.75); */
   }
 
-  header :not(:first-child) {
+  header ul {
+    flex-direction: column;
+    gap: 5.6rem;
+    margin-top: -3rem;
+  }
+
+  header ul li {
+    margin: 8rem 0;
+  }
+  header > :not(:first-child) {
     display: none;
   }
 
