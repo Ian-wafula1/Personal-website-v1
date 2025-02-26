@@ -5,7 +5,6 @@ const dropDown = document.querySelector('.drop-down')
 const header = document.querySelector('header')
 const items = [...document.querySelectorAll('header > :not(:first-child)')]
 const logo = document.querySelector('header > :first-child')
-console.log(items)
 
 img.forEach((img) =>
   img.addEventListener("mouseover", (e) => {
