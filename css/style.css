@@ -3,10 +3,6 @@
   --dark-grey: #8d8f86;
 }
 
-/* * {
-  border: 1px solid red;
-} */
-
 body {
   display: flex;
   flex-direction: column;
@@ -47,6 +43,7 @@ header {
   padding: 1.5rem 9rem;
   justify-content: space-between;
   background-color: white;
+  transition: all .6s;
 }
 
 header ul {
@@ -86,11 +83,7 @@ header .drop-down {
   position: absolute;
   right: 4vw;
   top: 1.5rem;
-  /* background-image: url("../images/menu-svgrepo-com.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat; */
-  transition: content 0.5s; 
+  transition: content 0.5s;
 }
 
 button {
@@ -438,15 +431,11 @@ a:has(> div.svg):hover {
   overflow: hidden;
   transition: background-size 1.3s, opacity 1s;
   color: #000;
-  /* display: grid;
-    place-content: center; */
-  /* padding: 2rem 5rem; */
 }
 
 .card > div:hover {
   background-size: 120%;
   background-position: center 0;
-  /* opacity: .4; */
 }
 
 .card > div::before {
@@ -520,9 +509,6 @@ footer > a:visited {
     padding: 0.5rem 2rem;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: space-evenly; */
-    /* gap: 1rem; */
-    /* box-shadow: 0px 3px 65px 0px rgba(189,172,172,0.75); */
   }
 
   header ul {
@@ -550,7 +536,6 @@ footer > a:visited {
 
   .technologies {
     padding: 5rem 1rem;
-    /* padding: 0; */
   }
 }
 

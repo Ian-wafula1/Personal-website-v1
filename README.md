@@ -1,14 +1,25 @@
 # Personal Website for Moringa
 
-This is a personal website made for an assignment for Moringa School.
+## Author name
+Ian Wafula
+
+## Running Instructions
+Use this [link](https://neocorpse.github.io/Personal-website-v1/) to view the project
 
 ## Technologies used
 
--Git and GitHub
--HTML
--CSS
--JavaScript
--Spotify (for vibes)
+- Git and GitHub
+- HTML
+- CSS
+- JavaScript
+- Spotify (for vibes)
+
+## Media query
+
+Responsiveness kicks in at 
+1. 845px
+2. 800px
+3. 540px
 
 ## Credits
 -[Favicon from Realfavicon generator](https://realfavicongenerator.net/)
