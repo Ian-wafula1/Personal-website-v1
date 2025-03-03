@@ -12,6 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.hero .right{
+  transition: all .9s;
+}
+
+.hero .left {
+  transition: all .75s;
+}
+
 header img {
   min-width: 5rem;
   transition: transform 0.5s;
@@ -62,6 +70,32 @@ header button {
 
 li {
   list-style: none;
+}
+
+li a{
+  display: inline-block;
+  position: relative;
+}
+
+li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: transform 0.4s ease-out;
+}
+
+li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+li a:hover {
+  opacity: 1;
 }
 
 a:link,
