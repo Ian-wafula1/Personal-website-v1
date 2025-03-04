@@ -1,4 +1,4 @@
-# Personal Website for Moringa
+# Personal Website
 
 ## Author name
 Ian Wafula
@@ -22,5 +22,5 @@ Responsiveness kicks in at
 3. 540px
 
 ## Credits
--[Favicon from Realfavicon generator](https://realfavicongenerator.net/)
--[Design from Kawsar-design](https://dribbble.com/Kawsarvy)
+- [Favicon from Realfavicon generator](https://realfavicongenerator.net/)
+- [Design from Kawsar-design](https://dribbble.com/Kawsarvy)
